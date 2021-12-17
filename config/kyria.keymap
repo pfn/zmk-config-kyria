@@ -41,7 +41,7 @@
 
 		swap_layer {
 			bindings = <
-	&kp BSPC       &kp P &kp O &kp I &kp I &lt BLUETOOTH Y                                                &mt MEDIA T &mt RGB R  &kp E     &kp W   &kp Q    &kp ESC
+	&kp BSPC       &kp P &kp O &kp I &kp U &lt BLUETOOTH Y                                                &mt MEDIA T &mt RGB R  &kp E     &kp W   &kp Q    &kp ESC
 	&mt RCTRL SQT &mt RALT SEMI &kp L &kp K &kp J &kp H                                                   &kp G &lt NAV F  &kp D     &kp S   &kp A &mt LCTRL TAB
 	&kp RSHFT &mt RGUI FSLH &kp DOT &kp COMMA &kp M &mt RSHFT N &kp LSHFT &kp C_PP    &caps_word  &kp LSHFT &mt LSHFT B &kp V  &kp C &mt LALT X &mt LGUI Z &kp LSHFT
 	                     &mo RGB &kp C_NEXT &mo SYMBOLS &kp SPACE &trans      &trans &kp RET  &mo NUMPAD &kp C_PREV &kp C_MUTE
