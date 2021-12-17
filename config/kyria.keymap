@@ -75,7 +75,7 @@
 
 			bindings = <
 	&trans &trans &trans &trans &trans &trans                                &kp LC(LEFT) &kp PG_DN   &kp PG_UP  &kp LC(RIGHT) &kp PSCRN  &kp HOME
-	&trans &trans &trans &trans &trans &trans                                &kp LEFT     &kp DOWNN   &kp UP     &kp RIGHT     &caps_word &kp INS
+	&trans &trans &trans &trans &trans &trans                                &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT     &caps_word &kp INS
 	&trans &trans &trans &trans &trans &trans &trans &trans    &trans &trans &kp K_REDO   &kp K_PASTE &kp K_COPY &kp CUT       &kp K_UNDO &kp END
 	                     &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
 			>;
