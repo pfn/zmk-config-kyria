@@ -23,6 +23,13 @@
 #define BLUETOOTH 7
 
 
+&mt {
+	flavor = "tap-preferred";
+};
+
+&lt {
+	flavor = "tap-preferred";
+};
 
 / {
 	keymap {
