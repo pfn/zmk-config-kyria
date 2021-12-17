@@ -30,9 +30,9 @@
 
 		default_layer {
 			bindings = <
-	&kp ESC       &kp Q &kp W &kp E &lt RGB R &lt MEDIA T                                         &lt BLUETOOTH Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&kp ESC       &kp Q &kp W &kp E &lt RGB R &lt MEDIA T                                         &lt BLUETOOTH Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
 	&mt LCTRL TAB &kp A &kp S &kp D &lt NAV F &kp G                                               &kp H &kp J  &kp K     &kp L   &mt RALT SEMI &mt RCTRL SQT
-	&kp LSHFT &mt LGUI Z &kp X &kp C &kp V &mt LSHFT B &kp LSHFT &caps_word    &kp K_PP   &kp LSHFT &mt RSHFT N &kp M  &kp COMMA &kp DOT &mt RGUI FSLH &kp RSHFT
+	&kp LSHFT &mt LGUI Z &mt LALT X &kp C &kp V &mt LSHFT B &kp LSHFT &caps_word    &kp K_PP   &kp LSHFT &mt RSHFT N &kp M  &kp COMMA &kp DOT &mt RGUI FSLH &kp RSHFT
 	                     &kp K_MUTE &kp K_PREV &mo NUMPAD &kp RET &sl SWAP     &sl SWAP &kp SPACE  &mo SYMBOLS &kp K_NEXT &mo RGB
 			>;
 
@@ -43,7 +43,7 @@
 			bindings = <
 	&kp BSPC       &kp P &kp O &kp I &kp I &lt BLUETOOTH Y                                                &mt MEDIA T &mt RGB R  &kp E     &kp W   &kp Q    &kp ESC
 	&mt RCTRL SQT &mt RALT SEMI &kp L &kp K &kp J &kp H                                                   &kp G &lt NAV F  &kp D     &kp S   &kp A &mt LCTRL TAB
-	&kp RSHFT &mt RGUI FSLH &kp DOT &kp COMMA &kp M &mt RSHFT N &kp LSHFT &kp K_PP    &caps_word  &kp LSHFT &mt LSHFT B &kp V  &kp C &kp X &mt LGUI Z &kp LSHFT
+	&kp RSHFT &mt RGUI FSLH &kp DOT &kp COMMA &kp M &mt RSHFT N &kp LSHFT &kp K_PP    &caps_word  &kp LSHFT &mt LSHFT B &kp V  &kp C &mt LALT X &mt LGUI Z &kp LSHFT
 	                     &mo RGB &kp K_NEXT &mo SYMBOLS &kp SPACE &trans      &trans &kp RET  &mo NUMPAD &kp K_PREV &kp K_MUTE
 			>;
 
