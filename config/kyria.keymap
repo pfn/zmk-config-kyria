@@ -39,8 +39,8 @@
 			bindings = <
 	&kp ESC       &kp Q &kp W &kp E &lt RGB R &lt MEDIA T                                         &lt BLUETOOTH Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
 	&mt LCTRL TAB &kp A &kp S &kp D &lt NAV F &kp G                                               &kp H &kp J  &kp K     &kp L   &mt RALT SEMI &mt RCTRL SQT
-	&kp LSHFT &mt LGUI Z &mt LALT X &kp C &kp V &mt LSHFT B &kp LSHFT &caps_word    &kp C_PP   &kp LSHFT &mt RSHFT N &kp M  &kp COMMA &kp DOT &mt RGUI FSLH &kp RSHFT
-	                     &kp C_MUTE &kp C_PREV &mo NUMPAD &kp RET &sl SWAP     &sl SWAP &kp SPACE  &mo SYMBOLS &kp C_NEXT &mo RGB
+	&kp LSHFT &mt LGUI Z &mt LALT X &kp C &kp V &mt LSHFT B &none &caps_word   &kp C_PP &none     &mt RSHFT N &kp M  &kp COMMA &kp DOT &mt RGUI FSLH &kp RSHFT
+	                     &kp C_MUTE &kp C_PREV &mo NUMPAD &kp RET &sl SWAP     &sl SWAP &kp SPACE &mo SYMBOLS &kp C_NEXT &mo RGB
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -48,10 +48,10 @@
 
 		swap_layer {
 			bindings = <
-	&kp BSPC       &kp P &kp O &kp I &kp U &lt BLUETOOTH Y                                                &mt MEDIA T &mt RGB R  &kp E     &kp W   &kp Q    &kp ESC
-	&mt RCTRL SQT &mt RALT SEMI &kp L &kp K &kp J &kp H                                                   &kp G &lt NAV F  &kp D     &kp S   &kp A &mt LCTRL TAB
-	&kp RSHFT &mt RGUI FSLH &kp DOT &kp COMMA &kp M &mt RSHFT N &kp LSHFT &kp C_PP    &caps_word  &kp LSHFT &mt LSHFT B &kp V  &kp C &mt LALT X &mt LGUI Z &kp LSHFT
-	                     &mo RGB &kp C_NEXT &mo SYMBOLS &kp SPACE &trans      &trans &kp RET  &mo NUMPAD &kp C_PREV &kp C_MUTE
+	&kp BSPC       &kp P &kp O &kp I &kp U &lt BLUETOOTH Y                                         &mt MEDIA T &mt RGB R  &kp E     &kp W   &kp Q    &kp ESC
+	&mt RCTRL SQT &mt RALT SEMI &kp L &kp K &kp J &kp H                                            &kp G &lt NAV F  &kp D     &kp S   &kp A &mt LCTRL TAB
+	&kp RSHFT &mt RGUI FSLH &kp DOT &kp COMMA &kp M &mt RSHFT N &none &kp C_PP   &caps_word  &none &mt LSHFT B &kp V  &kp C &mt LALT X &mt LGUI Z &kp LSHFT
+	                     &mo RGB &kp C_NEXT &mo SYMBOLS &kp SPACE &trans         &trans &kp RET    &mo NUMPAD &kp C_PREV &kp C_MUTE
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -60,10 +60,10 @@
 		numpad_layer {
 
 			bindings = <
-	&trans     &kp PG_UP &kp HOME &kp UP   &kp END   &kp RBRC                                  &kp RBRC &kp N7  &kp N8 &kp N9 &kp KP_SLASH &trans
+	&trans     &kp PG_UP &kp HOME &kp UP   &kp END   &kp LBRC                                  &kp RBRC &kp N7  &kp N8 &kp N9 &kp KP_SLASH &trans
 	&kp INSERT &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp LBKT                                  &kp RBKT &kp N4  &kp N5 &kp N6 &kp KP_MINUS &kp KP_MULTIPLY
 	&trans     &trans &trans &kp LC(LEFT) &kp LC(RIGHT) &kp LPAR &trans &trans   &trans &trans &kp RPAR &kp N1  &kp N2 &kp N3 &kp KP_PLUS  &kp EQUAL
-	                 &trans &trans &trans &trans &trans        &trans  &trans &kp N0 &kp KP_DOT &trans
+	                         &trans &trans &trans &trans &trans                  &trans  &trans &kp N0 &kp KP_DOT &trans
 			>;
 		};
 
@@ -116,7 +116,7 @@
 	&bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &trans &trans &trans &trans &trans &trans
 	&bt BT_PRV &trans &trans &trans &trans &trans                                                  &trans &trans &trans &trans &trans &trans
 	&trans     &trans &trans &out OUT_BLE &out OUT_USB &out OUT_TOG &trans &trans    &trans &trans &trans &trans &trans &trans &trans &trans
-	                     &bt BT_CLR &trans &trans &trans &trans                      &trans &trans &trans &trans &trans
+	                         &bt BT_CLR &trans &trans &trans &trans                  &trans &trans &trans &trans &trans
 			>;
 
 		};
