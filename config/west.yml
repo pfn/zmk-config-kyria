@@ -17,8 +17,8 @@ manifest:
       url-base: https://github.com/pfn
   projects:
     - name: zmk
-      remote: pfn
-      revision: locality
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
