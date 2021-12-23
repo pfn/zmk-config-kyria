@@ -32,13 +32,32 @@
 };
 
 / {
+	behaviors {
+		mtp: mod_tap_permissive {
+			compatible = "zmk,behavior-hold-tap";
+			label = "MOD_TAP_PERMISSIVE";
+			flavor = "balanced";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <0>;
+			bindings = <&kp>, <&kp>;
+		};
+		mto: mod_tap_other_hold {
+			compatible = "zmk,behavior-hold-tap";
+			label = "MOD_TAP_OTHER_HOLD";
+			flavor = "hold-preferred";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <0>;
+			bindings = <&kp>, <&kp>;
+		};
+	};
+
 	keymap {
 		compatible = "zmk,keymap";
 
 		default_layer {
 			bindings = <
 	&kp ESC       &kp Q &kp W &kp E &lt RGB R &lt MEDIA T                                         &lt BLUETOOTH Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-	&mt LCTRL TAB &kp A &kp S &kp D &lt NAV F &kp G                                               &kp H &kp J  &kp K     &kp L   &mt RALT SEMI &mt RCTRL SQT
+	&mto LCTRL TAB &kp A &kp S &kp D &lt NAV F &kp G                                               &kp H &kp J  &kp K     &kp L   &mt RALT SEMI &mtp RCTRL SQT
 	&kp LSHFT &mt LGUI Z &mt LALT X &kp C &kp V &mt LSHFT B &none &caps_word   &kp C_PP &none     &mt RSHFT N &kp M  &kp COMMA &kp DOT &mt RGUI FSLH &kp RSHFT
 	                     &kp C_MUTE &kp C_PREV &mo NUMPAD &kp RET &sl SWAP     &sl SWAP &kp SPACE &mo SYMBOLS &kp C_NEXT &mo RGB
 			>;
@@ -49,7 +68,7 @@
 		swap_layer {
 			bindings = <
 	&kp BSPC       &kp P &kp O &kp I &kp U &lt BLUETOOTH Y                                         &mt MEDIA T &mt RGB R  &kp E     &kp W   &kp Q    &kp ESC
-	&mt RCTRL SQT &mt RALT SEMI &kp L &kp K &kp J &kp H                                            &kp G &lt NAV F  &kp D     &kp S   &kp A &mt LCTRL TAB
+	&mtp RCTRL SQT &mt RALT SEMI &kp L &kp K &kp J &kp H                                            &kp G &lt NAV F  &kp D     &kp S   &kp A &mto LCTRL TAB
 	&kp RSHFT &mt RGUI FSLH &kp DOT &kp COMMA &kp M &mt RSHFT N &none &kp C_PP   &caps_word  &none &mt LSHFT B &kp V  &kp C &mt LALT X &mt LGUI Z &kp LSHFT
 	                     &mo RGB &kp C_NEXT &mo SYMBOLS &kp SPACE &trans         &trans &kp RET    &mo NUMPAD &kp C_PREV &kp C_MUTE
 			>;
