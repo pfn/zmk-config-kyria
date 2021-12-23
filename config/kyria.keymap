@@ -36,6 +36,7 @@
 		mtp: mod_tap_permissive {
 			compatible = "zmk,behavior-hold-tap";
 			label = "MOD_TAP_PERMISSIVE";
+			#binding-cells = <2>;
 			flavor = "balanced";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <0>;
@@ -44,6 +45,7 @@
 		mto: mod_tap_other_hold {
 			compatible = "zmk,behavior-hold-tap";
 			label = "MOD_TAP_OTHER_HOLD";
+			#binding-cells = <2>;
 			flavor = "hold-preferred";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <0>;
