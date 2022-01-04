@@ -39,6 +39,11 @@
 };
 
 / {
+	ext-power {
+		compatible = "zmk,ext-power-generic";
+		init-delay-ms = <150>;
+	};
+
 	behaviors {
 		mtp: mod_tap_permissive {
 			compatible = "zmk,behavior-hold-tap";
