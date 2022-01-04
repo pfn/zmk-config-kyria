@@ -137,7 +137,7 @@
 
 		rgb_layer {
 			bindings = <
-	&trans &trans &trans &trans &ext_power EXT_POWER_TOGGLE_CMD &trans       &trans &trans &trans &trans &trans &trans
+	&trans &trans &trans &ext_power EP_TOG &trans &trans                     &trans &trans &trans &trans &trans &trans
 	&trans &trans &trans &trans &trans &trans                                &rgb_ug RGB_TOG &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &rgb_ug RGB_EFF
 	&trans &trans &trans &trans &trans &trans &trans &trans    &trans &trans &trans          &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &rgb_ug RGB_EFR
 	                     &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
