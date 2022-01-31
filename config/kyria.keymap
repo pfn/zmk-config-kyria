@@ -67,6 +67,15 @@
 			quick-tap-ms = <0>;
 			bindings = <&kp>, <&kp>;
 		};
+		lto: layer_tap_other_hold {
+			compatible = "zmk,behavior-hold-tap";
+			label = "LAYER_TAP_OTHER_HOLD";
+			#binding-cells = <2>;
+			flavor = "hold-preferred";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <0>;
+			bindings = <&mo>, <&kp>;
+		};
 	};
 
 	keymap {
@@ -75,9 +84,9 @@
 		default_layer {
 			bindings = <
 	&kp ESC       &kp Q &kp W &kp E &lt RGB R &lt MEDIA T                                         &lt BLUETOOTH Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-	&mto LCTRL TAB &kp A &kp S &kp D &lt NAV F &kp G                                               &kp H &kp J  &kp K     &kp L   &mt RALT SEMI &mtp RCTRL SQT
-	&kp LSHFT &mt LGUI Z &mt LALT X &kp C &kp V &mt LSHFT B &none &caps_word   &kp C_PP &none     &mt RSHFT N &kp M  &kp COMMA &kp DOT &mt RGUI FSLH &kp RSHFT
-	                     &kp C_MUTE &kp C_PREV &mo NUMPAD &kp RET &sl SWAP     &sl SWAP &kp SPACE &mo SYMBOLS &kp C_NEXT &mo RGB
+	&mto LCTRL TAB &mt LCTL A &kp S &kp D &lt NAV F &kp G                                               &kp H &kp J  &kp K     &kp L   &mt RCTRL SEMI &mtp RCTRL SQT
+	&kp LSHFT &mt LSHFT Z &mt LGUI X &mt LALT C &kp V &mt LSHFT B &none &caps_word   &kp C_PP &none     &mt RSHFT N &kp M  &mt RALT COMMA &mt RGUI DOT &mt RSHFT FSLH &kp RSHFT
+	                     &kp C_MUTE &kp C_PREV &lto NUMPAD BSPC &kp RET &sl SWAP     &sl SWAP &kp SPACE &lto SYMBOLS ESC &kp C_NEXT &mo RGB
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -86,9 +95,9 @@
 		swap_layer {
 			bindings = <
 	&kp BSPC       &kp P &kp O &kp I &kp U &lt BLUETOOTH Y                                         &mt MEDIA T &mt RGB R  &kp E     &kp W   &kp Q    &kp ESC
-	&mtp RCTRL SQT &mt RALT SEMI &kp L &kp K &kp J &kp H                                            &kp G &lt NAV F  &kp D     &kp S   &kp A &mto LCTRL TAB
-	&kp RSHFT &mt RGUI FSLH &kp DOT &kp COMMA &kp M &mt RSHFT N &none &kp C_PP   &caps_word  &none &mt LSHFT B &kp V  &kp C &mt LALT X &mt LGUI Z &kp LSHFT
-	                     &mo RGB &kp C_NEXT &mo SYMBOLS &kp SPACE &trans         &trans &kp RET    &mo NUMPAD &kp C_PREV &kp C_MUTE
+	&mtp RCTRL SQT &mt RALT SEMI &kp L &kp K &kp J &kp H                                            &kp G &lt NAV F  &kp D     &kp S   &mt LCTL A &mto LCTRL TAB
+	&kp RSHFT &mt RGUI FSLH &kp DOT &kp COMMA &kp M &mt RSHFT N &none &kp C_PP   &caps_word  &none &mt LSHFT B &kp V  &mt LALT C &mt LGUI X &mt LSHFT Z &kp LSHFT
+	                     &mo RGB &kp C_NEXT &lto SYMBOLS ESC &kp SPACE &trans         &trans &kp RET    &lto NUMPAD BSPC &kp C_PREV &kp C_MUTE
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
